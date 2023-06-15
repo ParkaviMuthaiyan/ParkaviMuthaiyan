@@ -1,0 +1,71 @@
+.side-nav-bar {
+    width: var(--side-nav-bar-width);
+    height: 100vh;
+    background: var(--dark-blue);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.side-nav-bar>.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid var(--dark-gray);
+    margin: 20px auto;
+}
+
+.side-nav-bar>.profile-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.side-nav-bar>.name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.side-nav-bar .social-media {
+    width: 40px;
+    height: 40px;
+    background: var(--dark-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    transition: all .2s;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.side-nav-bar .social-media:hover {
+    background: var(--light-blue);
+    cursor: pointer;
+}
+
+.side-nav-bar .nav-container a {
+    color: var(--light-gray);
+}
+
+.side-nav-bar .nav-container a>.icon {
+    font-size: 22px;
+    width: 30px;
+    transition: all .2s;
+}
+
+.side-nav-bar .nav-container a>.label {
+    transition: all .2s;
+}
+
+.side-nav-bar .nav-container a.active>.icon,
+.side-nav-bar .nav-container a:hover>.icon {
+    color: var(--light-blue);
+}
+
+.side-nav-bar .nav-container a.active>.label,
+.side-nav-bar .nav-container a:hover>.label {
+    color: var(--white);
+}

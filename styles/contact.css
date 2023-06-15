@@ -1,0 +1,18 @@
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--contact-icon-background);
+    transition: all .2s;
+    color: var(--light-blue);
+    border-radius: 50rem;
+    overflow: hidden;
+    font-size: 22px;
+}
+
+.contact-icon:hover {
+    background: var(--light-blue);
+    color: var(--white);
+}

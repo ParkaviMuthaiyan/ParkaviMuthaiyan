@@ -1,0 +1,18 @@
+.resume-item {
+    position: relative;
+    border-left: 2px solid var(--dark-blue);
+    margin-top: -2px;
+}
+
+.resume-item::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--dark-blue);
+    border-radius: 50rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -9px;
+    background: var(--white);
+}

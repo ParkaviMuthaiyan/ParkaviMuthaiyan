@@ -4,11 +4,413 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Parkavi Muthaiyan | Full Stack Developer</title>
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/side-nav-bar.css">
+    <link rel="stylesheet" href="styles/main-content.css">
+    <link rel="stylesheet" href="styles/main-banner.css">
+    <link rel="stylesheet" href="styles/resume.css">
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 
 <body>
-    <h1>Hello</h1>
+
+    <div class="d-flex">
+
+        <!-- Side navbar -->
+        <nav class="side-nav-bar" id="side-nav-bar">
+            <div class="profile-img">
+                <img src="assets/images/profile-img.jpg" alt="Profile image">
+            </div>
+
+            <h1 class="name text-light text-center">Parkavi Muthaiyan</h1>
+
+            <ul class="hstack gap-3 justify-content-center mt-2 list-unstyled">
+                <li>
+                    <a href="#" class="text-decoration-none">
+                        <i class="social-media bi-skype"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-decoration-none">
+                        <i class="social-media bi-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="vstack gap-2 mt-4 list-unstyled nav-container">
+                <li class="px-2">
+                    <a href="#home" data-nav-item="home" class="hstack px-3 text-decoration-none py-2 rounded active">
+                        <i class="icon bi-house-door"></i>
+                        <span class="label">Home</span>
+                    </a>
+                </li>
+
+                <li class="px-2">
+                    <a href="#about" data-nav-item="about" class="hstack px-3 text-decoration-none py-2 rounded">
+                        <i class="icon bi-person"></i>
+                        <span class="label">About</span>
+                    </a>
+                </li>
+
+                <li class="px-2">
+                    <a href="#skills" data-nav-item="skills" class="hstack px-3 text-decoration-none py-2 rounded">
+                        <i class="icon bi-card-list"></i>
+                        <span class="label">Skills</span>
+                    </a>
+                </li>
+
+                <li class="px-2">
+                    <a href="#resume" data-nav-item="resume" class="hstack px-3 text-decoration-none py-2 rounded">
+                        <i class="icon bi-file-earmark"></i>
+                        <span class="label">Resume</span>
+                    </a>
+                </li>
+
+                <li class="px-2">
+                    <a href="#my-works" data-nav-item="my-works" class="hstack px-3 text-decoration-none py-2 rounded">
+                        <i class="icon bi-journal-check"></i>
+                        <span class="label">My Works</span>
+                    </a>
+                </li>
+
+                <li class="px-2">
+                    <a href="#contact" data-nav-item="contact" class="hstack px-3 text-decoration-none py-2 rounded">
+                        <i class="icon bi-envelope"></i>
+                        <span class="label">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Home -->
+            <section class="main-banner d-flex align-items-center justify-content-center flex-column" id="home">
+                <div class="user-info">
+                    <h1 class="text-white">Parkavi Muthaiyan</h1>
+                    <p class="hstack text-white">
+                        I'm
+                        <span class="ms-2" id="designation"></span>
+                    </p>
+                </div>
+            </section>
+
+
+            <!-- About -->
+            <section class="py-5 px-4" id="about">
+                <h2 class="main-heading">About</h2>
+
+                <p class="text-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, voluptatum enim
+                    quod autem
+                    officiis modi dolore. Optio modi odio vero iure dolorum error sapiente explicabo doloremque alias?
+                    Eius rem minus debitis distinctio aspernatur expedita harum quae reiciendis alias quisquam ea
+                    tenetur dolore voluptas facere deserunt necessitatibus nesciunt quasi, earum aliquam.</p>
+
+                <h3 class="sub-heading">Full Stack Developer</h3>
+
+                <p class="text-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam minus aliquid id,
+                    tempora consequatur
+                    corrupti eligendi. Sed doloremque qui, perspiciatis quae atque neque deserunt pariatur unde, ipsam
+                    eum minima provident!</p>
+
+                <div class="hstack gap-5">
+
+                    <ul class="list-unstyled about-list">
+                        <li class="hstack gap-2 mb-4">
+                            <i class="bi-chevron-right text-light-blue"></i>
+                            <strong>Birthday:</strong>
+                            <span>1 May 1995</span>
+                        </li>
+                        <li class="hstack gap-2 mb-4">
+                            <i class="bi-chevron-right text-light-blue"></i>
+                            <strong>Website:</strong>
+                            <span>www.example.com</span>
+                        </li>
+                        <li class="hstack gap-2 mb-4">
+                            <i class="bi-chevron-right text-light-blue"></i>
+                            <strong>Phone:</strong>
+                            <span>+123 456 7890</span>
+                        </li>
+                        <li class="hstack gap-2 mb-4">
+                            <i class="bi-chevron-right text-light-blue"></i>
+                            <strong>City:</strong>
+                            <span>New York, USA</span>
+                        </li>
+                    </ul>
+
+                    <ul class="list-unstyled">
+                        <li class="hstack gap-2 mb-4">
+                            <i class="bi-chevron-right text-light-blue"></i>
+                            <strong>Age:</strong>
+                            <span>30</span>
+                        </li>
+                        <li class="hstack gap-2 mb-4">
+                            <i class="bi-chevron-right text-light-blue"></i>
+                            <strong>Degree:</strong>
+                            <span>Master</span>
+                        </li>
+                        <li class="hstack gap-2 mb-4">
+                            <i class="bi-chevron-right text-light-blue"></i>
+                            <strong>Email:</strong>
+                            <span>email@example.com</span>
+                        </li>
+                        <li class="hstack gap-2 mb-4">
+                            <i class="bi-chevron-right text-light-blue"></i>
+                            <strong>Freelance:</strong>
+                            <span>Available</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <p class="text-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam minus aliquid id,
+                    tempora consequatur
+                    corrupti eligendi. Sed doloremque qui, perspiciatis quae atque neque deserunt pariatur unde, ipsam
+                    eum minima provident!</p>
+            </section>
+
+
+            <!-- Skills -->
+            <section class="py-5 px-4 bg-white-shade" id="skills">
+                <h2 class="main-heading">Skills</h2>
+
+                <p class="text-text mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur delectus
+                    perferendis minus
+                    voluptates voluptatibus mollitia esse aut! Recusandae dicta esse iure optio, non repudiandae vitae
+                    molestias officia, inventore, perferendis odit.</p>
+
+
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="col-4">
+                            <h3 class="sub-heading">Front-end technologies</h3>
+
+                            <ul class="list-unstyled">
+
+                                <li class="hstack gap-2 mb-4">
+                                    <i class="bi-chevron-right text-light-blue"></i>
+                                    <span>React JS</span>
+                                </li>
+
+                                <li class="hstack gap-2 mb-4">
+                                    <i class="bi-chevron-right text-light-blue"></i>
+                                    <span>Redux JS</span>
+                                </li>
+
+                                <li class="hstack gap-2 mb-4">
+                                    <i class="bi-chevron-right text-light-blue"></i>
+                                    <span>Bootstrap</span>
+                                </li>
+
+                                <li class="hstack gap-2 mb-4">
+                                    <i class="bi-chevron-right text-light-blue"></i>
+                                    <span>JavaScript</span>
+                                </li>
+
+                                <li class="hstack gap-2 mb-4">
+                                    <i class="bi-chevron-right text-light-blue"></i>
+                                    <span>HTML</span>
+                                </li>
+
+                                <li class="hstack gap-2 mb-4">
+                                    <i class="bi-chevron-right text-light-blue"></i>
+                                    <span>CSS</span>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="col-8">
+                            <h3 class="sub-heading">Server Side technologies</h3>
+
+                            <ul class="list-unstyled">
+
+                                <li class="hstack gap-2 mb-4">
+                                    <i class="bi-chevron-right text-light-blue"></i>
+                                    <span>Express JS</span>
+                                </li>
+
+                                <li class="hstack gap-2 mb-4">
+                                    <i class="bi-chevron-right text-light-blue"></i>
+                                    <span>Node JS</span>
+                                </li>
+
+                            </ul>
+
+                            <h3 class="sub-heading">Database technologies (SQL)</h3>
+
+                            <ul class="list-unstyled">
+
+                                <li class="hstack gap-2 mb-4">
+                                    <i class="bi-chevron-right text-light-blue"></i>
+                                    <span>MySQL</span>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- Resume -->
+            <section class="py-5 px-4" id="resume">
+                <h2 class="main-heading">Resume</h2>
+
+                <div class="hstack gap-3">
+                    <button class="btn btn-danger my-3">
+                        <i class="bi-download"></i>
+                        <span class="ms-2">Download PDF</span>
+                    </button>
+                    <button class="btn btn-primary my-3">
+                        <i class="bi-download"></i>
+                        <span class="ms-2">Download DOCX</span>
+                    </button>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="sub-heading">Objective</h3>
+
+                            <div class="resume-item pb-2 ps-4 mb-4">
+                                <p class="text-text fst-italic m-0">Innovative and deadline-driven Graphic Designer with
+                                    3+
+                                    years of
+                                    experience designing and developing user-centered digital/print marketing material
+                                    from
+                                    initial
+                                    concept to final, polished deliverable.</p>
+                            </div>
+
+                            <h3 class="sub-heading mb-4">Academic Details</h3>
+
+                            <div class="resume-item pb-2 ps-4">
+
+                                <h4 class="sub-sub-heading text-uppercase">MCA - Master of Computer Applications</h4>
+
+                                <h5 class="px-2 py-1 bg-secondary bg-opacity-25 rounded d-inline-block fs-6">2019 -
+                                    2021
+                                </h5>
+
+                                <p class="text-text fst-italic">Khadir Mohideen College, Adirampattinam</p>
+
+                            </div>
+
+                            <div class="resume-item pb-2 ps-4">
+
+                                <h4 class="sub-sub-heading text-uppercase">BCA - Bachalor of Computer Applications</h4>
+
+                                <h5 class="px-2 py-1 bg-secondary bg-opacity-25 rounded d-inline-block fs-6">2016 -
+                                    2019
+                                </h5>
+
+                                <p class="text-text fst-italic">Khadir Mohideen College, Adirampattinam</p>
+
+                            </div>
+
+                            <div class="resume-item pb-2 ps-4">
+
+                                <h4 class="sub-sub-heading text-uppercase">HSC</h4>
+
+                                <h5 class="px-2 py-1 bg-secondary bg-opacity-25 rounded d-inline-block fs-6">2016 -
+                                    2019
+                                </h5>
+
+                                <p class="text-text fst-italic">Khadir Mohideen College, Adirampattinam</p>
+
+                            </div>
+
+                            <div class="resume-item pb-2 ps-4">
+
+                                <h4 class="sub-sub-heading text-uppercase">SSLC</h4>
+
+                                <h5 class="px-2 py-1 bg-secondary bg-opacity-25 rounded d-inline-block fs-6">2016 -
+                                    2019
+                                </h5>
+
+                                <p class="text-text fst-italic">Khadir Mohideen College, Adirampattinam</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- My Works -->
+            <section class="py-5 px-4" id="my-works">
+                <h2 class="main-heading">My Works</h2>
+
+            </section>
+
+
+            <!-- Contact -->
+            <section class="py-5 px-4 mb-5 min-vh-100" id="contact">
+                <h2 class="main-heading">Contact</h2>
+
+                <p class="text-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet fugiat
+                    voluptatum est ad laudantium blanditiis optio a temporibus eius.</p>
+
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+
+                                <a href="#" class="hstack gap-3 text-decoration-none text-dark mb-5">
+                                    <div class="contact-icon">
+                                        <i class="bi-envelope"></i>
+                                    </div>
+                                    <div class="vstack gap-1">
+                                        <h4 class="m-0 fw-bold">Email:</h4>
+                                        <p class="m-0">mail@gmail.com</p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="hstack gap-3 text-decoration-none text-dark">
+                                    <div class="contact-icon">
+                                        <i class="bi-phone"></i>
+                                    </div>
+                                    <div class="vstack gap-1">
+                                        <h4 class="m-0 fw-bold">Phone:</h4>
+                                        <p class="m-0">+91 9897867676</p>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+    </div>
+
+    <a href="#home" id="go-to-top" class="go-to-top d-none">
+        <i class="bi-arrow-up"></i>
+    </a>
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="scripts/side-nav-bar.js"></script>
+    <script src="scripts/typed.js"></script>
+    <script src="scripts/go-to-top.js"></script>
 </body>
 
 </html>
