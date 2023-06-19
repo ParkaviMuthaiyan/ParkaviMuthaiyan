@@ -19,9 +19,11 @@
     justify-content: center;
 }
 
-.side-nav-bar>.profile-img>i {
-    font-size: 60px;
-    color: var(--white);
+.side-nav-bar>.profile-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .side-nav-bar>.name {
