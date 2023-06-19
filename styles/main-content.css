@@ -45,35 +45,3 @@
     position: relative;
     text-transform: uppercase;
 }
-
-.pro1head {
-    color: var(--sub-heading);
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    position: relative;
-    font-variant: small-caps;
-}
-
-.pro1Details {
-    color: var(--sub-heading);
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    position: relative;
-    /* text-transform: uppercase; */
-}
-
-.pro1Text {
-    color: var(--text);
-    font-family: 'Poppins', sans-serif;
-    font-size: var(--bs-body-font-size);
-    font-weight: var(--bs-body-font-weight);
-    line-height: var(--bs-body-line-height);
-    line-height: 2em;
-}
-
-/* .card-body {
-    width: 400px;
-    border: none;
-} */

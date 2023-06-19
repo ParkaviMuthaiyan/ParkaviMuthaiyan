@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/main-content.css">
     <link rel="stylesheet" href="styles/main-banner.css">
     <link rel="stylesheet" href="styles/resume.css">
+    <link rel="stylesheet" href="styles/my-works.css">
     <link rel="stylesheet" href="styles/contact.css">
 </head>
 
@@ -32,7 +33,7 @@
 
             <ul class="hstack gap-3 justify-content-center mt-2 list-unstyled">
                 <li>
-                    <a href="tel:+918072159243" class="text-decoration-none">
+                    <a href="tel:+918072159243" target="_blank" class="text-decoration-none">
                         <i class="social-media bi-phone"></i>
                     </a>
                 </li>
@@ -141,17 +142,26 @@
                         <li class="hstack gap-2 mb-4">
                             <i class="bi-chevron-right text-light-blue"></i>
                             <strong>Website:</strong>
-                            <span>www.example.com</span>
+                            <span>
+                                <a href="https://parkavimuthaiyan.github.io/" target="_blank"
+                                    class="text-decoration-none">parkavimuthaiyan.github.io</a>
+                            </span>
                         </li>
                         <li class="hstack gap-2 mb-4">
                             <i class="bi-chevron-right text-light-blue"></i>
                             <strong>Phone:</strong>
-                            <span>+91 8072159243</span>
+                            <span>
+                                <a href="tel:+918072159243" target="_blank" class="text-decoration-none">+91 80721
+                                    59243</a>
+                            </span>
                         </li>
                         <li class="hstack gap-2 mb-4">
                             <i class="bi-chevron-right text-light-blue"></i>
                             <strong>City:</strong>
-                            <span>Tamilnadu, Chennai</span>
+                            <span>
+                                <a href="https://goo.gl/maps/426vy3SAzWkk8KgA8" target="_blank"
+                                    class="text-decoration-none">Tamilnadu, Chennai</a>
+                            </span>
                         </li>
                     </ul>
 
@@ -164,12 +174,18 @@
                         <li class="hstack gap-2 mb-4">
                             <i class="bi-chevron-right text-light-blue"></i>
                             <strong>Degree:</strong>
-                            <span>Master</span>
+                            <span>
+                                <a href="https://en.wikipedia.org/wiki/Master_of_Science_in_Information_Technology"
+                                    target="_blank" class="text-decoration-none">MCA Computer Applications</a>
+                            </span>
                         </li>
                         <li class="hstack gap-2 mb-4">
                             <i class="bi-chevron-right text-light-blue"></i>
                             <strong>Email:</strong>
-                            <span>parkavimuthaiyan@gmail.com</span>
+                            <span>
+                                <a href="mailto:parkavimuthaiyan@gmail.com" target="_blank"
+                                    class="text-decoration-none">parkavimuthaiyan@gmail.com</a>
+                            </span>
                         </li>
                         <li class="hstack gap-2 mb-4">
                             <i class="bi-chevron-right text-light-blue"></i>
@@ -180,10 +196,6 @@
 
                 </div>
 
-                <!-- <p class="text-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam minus aliquid id,
-                    tempora consequatur
-                    corrupti eligendi. Sed doloremque qui, perspiciatis quae atque neque deserunt pariatur unde, ipsam
-                    eum minima provident!</p> -->
             </section>
 
 
@@ -278,14 +290,14 @@
                 <h2 class="main-heading">Resume</h2>
 
                 <div class="hstack gap-3">
-                    <button class="btn btn-danger my-3">
+                    <button class="btn btn-danger my-3" id="downloadPdfButton">
                         <i class="bi-download"></i>
                         <span class="ms-2">Download PDF</span>
                     </button>
-                    <button class="btn btn-primary my-3">
+                    <!-- <button class="btn btn-primary my-3">
                         <i class="bi-download"></i>
                         <span class="ms-2">Download DOCX</span>
-                    </button>
+                    </button> -->
                 </div>
 
                 <div class="container-fluid">
@@ -361,22 +373,121 @@
 
 
             <!-- My Works -->
-            <section class="py-5 px-4" id="my-works">
+            <section class="my-works py-5 px-4" id="my-works">
                 <h2 class="main-heading">My Works</h2>
-                <div class="project1">
-                    <h3 class="pro1head">Quiz-App</h3>
-                    <ul class="pro1Details">
-                        <li>Tec-Stack</li>
-                        <p class="pro1Text">React js, Express js, MySQL</p>
-                        <li>Responsiblities</li>
-                        <p class="pro1Text">Quiz App is a collection of number of different types of quizzes like
-                            technical, games,
-                            sports, etc. <br>A user can access/play all of the quiz and can attempt any of the one.
-                            <br>There
-                            will be limited number of questions and for each correct answer user will get a credit
-                            score.
-                        </p>
-                    </ul>
+
+                <div class="row mb-5">
+
+                    <div class="col-4">
+                        <div class="image-wrapper border p-2 shadow-sm rounded">
+                            <img src="assets/images/hero-bg.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-8">
+                        <h3 class="sub-heading">1. Quiz Web Application</h3>
+
+
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <strong>Tech Stack</strong>
+                                <br>
+                                <i>React js, Express js and MySQL</i>
+                            </li>
+                            <li class="mb-2">
+                                <strong>Responsiblities</strong>
+                                <ul>
+                                    <li>Quiz App is a collection of number of different types of quizzes like technical,
+                                        games, sports, etc.</li>
+                                    <li>A user can access/play all of the quiz and can attempt any of the one.</li>
+                                    <li>There will be limited number of questions and for each correct answer user will
+                                        get a credit score.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="quiz-web-app/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                <a href="https://github.com/ParkaviMuthaiyan/quiz-app"
+                                    class="btn btn-sm btn-danger ms-2" target="_blank">Source
+                                    Code</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+
+                    <div class="col-4">
+                        <div class="image-wrapper border p-2 shadow-sm rounded">
+                            <img src="assets/images/hero-bg.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-8">
+                        <h3 class="sub-heading">1. Quiz Web Application</h3>
+
+
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <strong>Tech Stack</strong>
+                                <br>
+                                <i>React js, Express js and MySQL</i>
+                            </li>
+                            <li class="mb-2">
+                                <strong>Responsiblities</strong>
+                                <ul>
+                                    <li>Quiz App is a collection of number of different types of quizzes like technical,
+                                        games, sports, etc.</li>
+                                    <li>A user can access/play all of the quiz and can attempt any of the one.</li>
+                                    <li>There will be limited number of questions and for each correct answer user will
+                                        get a credit score.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="quiz-web-app/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                <a href="https://github.com/ParkaviMuthaiyan/quiz-app"
+                                    class="btn btn-sm btn-danger ms-2" target="_blank">Source
+                                    Code</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+
+                    <div class="col-4">
+                        <div class="image-wrapper border p-2 shadow-sm rounded">
+                            <img src="assets/images/hero-bg.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-8">
+                        <h3 class="sub-heading">1. Quiz Web Application</h3>
+
+
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <strong>Tech Stack</strong>
+                                <br>
+                                <i>React js, Express js and MySQL</i>
+                            </li>
+                            <li class="mb-2">
+                                <strong>Responsiblities</strong>
+                                <ul>
+                                    <li>Quiz App is a collection of number of different types of quizzes like technical,
+                                        games, sports, etc.</li>
+                                    <li>A user can access/play all of the quiz and can attempt any of the one.</li>
+                                    <li>There will be limited number of questions and for each correct answer user will
+                                        get a credit score.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="quiz-web-app/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                <a href="https://github.com/ParkaviMuthaiyan/quiz-app"
+                                    class="btn btn-sm btn-danger ms-2" target="_blank">Source
+                                    Code</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </section>
@@ -396,23 +507,24 @@
                         <div class="card shadow-sm">
                             <div class="card-body">
 
-                                <a href="#" class="hstack gap-3 text-decoration-none text-dark mb-5">
+                                <a href="mailto:parkavimuthaiyan@gmail.com" target="_blank"
+                                    class="hstack gap-3 text-decoration-none text-dark mb-5">
                                     <div class="contact-icon">
                                         <i class="bi-envelope"></i>
                                     </div>
                                     <div class="vstack gap-1">
                                         <h4 class="m-0 fw-bold">Email:</h4>
-                                        <p class="m-0">mail@gmail.com</p>
+                                        <p class="m-0">parkavimuthaiyan@gmail.com</p>
                                     </div>
                                 </a>
 
-                                <a href="#" class="hstack gap-3 text-decoration-none text-dark">
+                                <a href="tel:+918072159243" class="hstack gap-3 text-decoration-none text-dark">
                                     <div class="contact-icon">
                                         <i class="bi-phone"></i>
                                     </div>
                                     <div class="vstack gap-1">
                                         <h4 class="m-0 fw-bold">Phone:</h4>
-                                        <p class="m-0">+91 8072159243</p>
+                                        <p class="m-0">+91 80721 59243</p>
                                     </div>
                                 </a>
 
@@ -436,6 +548,7 @@
     <script src="scripts/side-nav-bar.js"></script>
     <script src="scripts/typed.js"></script>
     <script src="scripts/go-to-top.js"></script>
+    <script src="scripts/download-resume.js"></script>
 </body>
 
 </html>
